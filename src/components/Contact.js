@@ -1,8 +1,13 @@
 import React from "react";
+import "./CSS/header.css"
+import Nav from "./Nav"
 
 const Contact = () => (
     <div>
-        <p>Contact</p>
+        <div class = "header">
+            <h1>Contact</h1>
+        </div>
+        <Nav/>
     </div>
 )
 

@@ -1,8 +1,13 @@
 import React from "react";
+import "./CSS/header.css"
+import Nav from "./Nav"
 
 const Projects = () => (
     <div>
-        <p>Projects</p>
+        <div class = "header">
+            <h1>Projects</h1>
+        </div>
+        <Nav/>
     </div>
 )
 

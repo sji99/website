@@ -1,0 +1,60 @@
+.topnav {
+    background-color: #3c3c3c;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.header {
+    padding: 50px;
+    text-align: center;
+    background: #ff5a5f;
+    color: white;
+    font-size: 25px;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3c3c3c;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#items {
+    float: left;
+    display: block;
+    color: #f5f5f5;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#items a:link {
+    text-decoration: none;
+}
+
+#items a {
+    display: block;
+    padding: 1px 50px;
+}
+
+#title {
+    text-decoration: none;
+    color: white
+}
+
+.topnav li:hover {
+    background-color: #c1839f;
+    color: #3c3c3c;
+}

@@ -1,16 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom"
+import "./CSS/header.css"
 
-const Nav = () => (
-    <div>
-        <ul>
-            <li><Link to='/'>Home</Link></li>
-            <li><Link to='/about'>About</Link></li>
-            <li><Link to='/skills'>Skills</Link></li>
-            <li><Link to='/projects'>Projects</Link></li>
-            <li><Link to='/contact'>Contact</Link></li>
-        </ul>
-    </div>
-)
+function Nav() {
+    return (
+        <div class="topnav">
+            <ul id="nav">
+                <li id="items"><Link to='/'><p id="title">Home</p></Link></li>
+                <li id="items"><Link to='/about'><p id="title">About</p></Link></li>
+                <li id="items"><Link to='/skills' ><p id="title">Skills</p></Link></li>
+                <li id="items"><Link to='/projects' ><p id="title">Projects</p></Link></li>
+                <li id="items"><Link to='/contact' ><p id="title">Contact</p></Link></li>
+            </ul>
+        </div>
+    )
+}
 
 export default Nav;

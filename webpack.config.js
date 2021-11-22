@@ -15,7 +15,7 @@ module.exports = {
   ],
   resolve: {
     modules: [__dirname, "src", "node_modules"],
-    extensions: ["*", ".js", ".jsx", ".tsx", ".ts"],
+    extensions: ["*", ".js", ".jsx", ".tsx", ".ts", ".css"],
   },
   module: {
     rules: [
@@ -23,7 +23,7 @@ module.exports = {
         test: /\.jsx?$/,
         exclude: /node_modules/,
         loader: require.resolve("babel-loader"),
-        
+
       },
       {
         test: /\.css$/,
