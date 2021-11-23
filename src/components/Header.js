@@ -8,11 +8,11 @@ const images = [{ image: img1 }, { image: img2 }, { image: img3 }]
 
 
 function Header({ Title }) {
-    const [current, setCurrent] = useState(parseInt(localStorage.getItem('current')));
+    const [current, setCurrent] = useState(isNaN(parseInt(localStorage.getItem('current'))) ? 0 : parseInt(localStorage.getItem('current')));
     const length = images.length
 
     useEffect(() => {
-        localStorage.setItem('current', current)
+        localStorage.setItem('current', JSON.stringify(current))
     }, [current]);
 
     const nextSlide = () => {
@@ -24,7 +24,8 @@ function Header({ Title }) {
     };
 
     if (!Array.isArray(images) || images.length <= 0) {
-        return null;
+        setCurrent(0);
+        // return null;
     }
 
     return (
