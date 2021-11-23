@@ -4,7 +4,7 @@ import "./CSS/header.css"
 
 function Nav() {
     return (
-        <div class="topnav">
+        <div className="topnav">
             <ul id="nav">
                 <li id="items"><Link to='/'><p id="title">Home</p></Link></li>
                 <li id="items"><Link to='/about'><p id="title">About</p></Link></li>

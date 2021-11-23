@@ -1,4 +1,3 @@
-
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
@@ -15,7 +14,7 @@ module.exports = {
   ],
   resolve: {
     modules: [__dirname, "src", "node_modules"],
-    extensions: ["*", ".js", ".jsx", ".tsx", ".ts", ".css"],
+    extensions: ["*", ".js", ".jsx", ".tsx", ".ts"],
   },
   module: {
     rules: [
@@ -23,7 +22,6 @@ module.exports = {
         test: /\.jsx?$/,
         exclude: /node_modules/,
         loader: require.resolve("babel-loader"),
-
       },
       {
         test: /\.css$/,
