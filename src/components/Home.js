@@ -1,8 +1,12 @@
 import React from "react";
 import Nav from "./Nav"
 import "./CSS/content.css"
-import Header from "./Header"
-import Footer from "./Footer";
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css'
+import img4 from "./images/home.jpg"
+import img3 from "./images/placeholder.jpg";
+import "./CSS/home.css"
+import { Link } from "react-router-dom"
 
 const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec posuere nisl. Cras at posuere quam. Morbi in gravida orci. Quisque eget justo ut lectus condimentum convallis. Duis ut sodales arcu. Etiam tempor, nibh ut viverra volutpat, orci nisl viverra libero, vitae ultricies lacus nisi et tortor. Integer aliquam metus lectus, eu tempor tortor lacinia ut. Phasellus porttitor mattis ipsum in pulvinar. Vivamus sodales dui et augue tincidunt malesuada. Vivamus vitae eleifend neque. Sed tempus, eros ut viverra pharetra, lorem elit egestas ante, aliquam ultricies nisl leo a felis. In id tellus sapien. Proin eget sapien eget enim imperdiet gravida et at augue. Nunc euismod condimentum porta. \
 Aenean semper quis turpis in scelerisque. Aenean purus massa, aliquet non maximus feugiat, gravida eu magna. Etiam id neque sed quam aliquam fermentum et id nisl. Vivamus laoreet, augue at hendrerit venenatis, erat ipsum dignissim ligula, ut accumsan elit risus eget tortor. Aenean volutpat, ante in semper facilisis, eros urna blandit libero, et suscipit mi lacus ac nisl. Cras id erat eros. Donec vitae viverra orci. Suspendisse efficitur magna sed urna egestas feugiat. Proin gravida non elit eu ultrices. Aenean aliquet nisl non eros dapibus consequat ac rutrum sem. Fusce tempus ex eros, vel varius nisi eleifend a. \
@@ -12,15 +16,17 @@ Nulla accumsan convallis dui, sit amet aliquam ligula consectetur nec. Phasellus
 
 
 
-const Home = () => (
-    <div>
-        <Header Title="Home" />
-        <Nav />
-        <div className="content">
-            <p>{text}</p>
+function Home() {
+    return (
+
+        <div>
+            <div className="img-container" style={{ width: '100%' }}>
+                <img id="home-img" src={img4} draggable="false" />
+                <h1 id="centered-text">Sean Ilagan</h1>
+            </div>
+            <Nav/>
         </div>
-        <Footer />
-    </div>
-)
+    )
+}
 
 export default Home;

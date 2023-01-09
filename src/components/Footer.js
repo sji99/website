@@ -5,9 +5,8 @@ import img1 from "./images/img1.jpg"
 
 const Footer = () => (
     <div>
-        <div className="content">
+        <div className="footer">
             <h1>FOOTER</h1>
-            <img src = {img1}/>
         </div>
     </div>
 )
