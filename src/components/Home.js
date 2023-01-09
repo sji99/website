@@ -17,14 +17,30 @@ Nulla accumsan convallis dui, sit amet aliquam ligula consectetur nec. Phasellus
 
 
 function Home() {
-    return (
+    const [state, setState] = React.useState(false);
 
+    function handleStateChange(newState) {
+        setState(newState);
+    }
+
+
+    return (
         <div>
-            <div className="img-container" style={{ width: '100%' }}>
-                <img id="home-img" src={img4} draggable="false" />
-                <h1 id="centered-text">Sean Ilagan</h1>
-            </div>
-            <Nav/>
+            {
+                !state ?
+
+                    <div className="img-container" style={{ width: '100%' }}>
+                        <img id="home-img" src={img4} draggable="false" />
+                        <h1 id="centered-text">Sean Ilagan</h1>
+                    </div>
+                    :
+                    <div className="img-container" >
+                        <img id="home-img" src={img4} draggable="false" />
+                        <h1 id="centered-text">Sean Ilagan</h1>
+                    </div>
+            }
+            <Nav onStateChange={handleStateChange} />
+
         </div>
     )
 }

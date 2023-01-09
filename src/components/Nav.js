@@ -8,6 +8,7 @@ function Nav(props) {
 
     function toggleMenu() {
         setIsOpen(!isOpen);
+        props.onStateChange(!isOpen);
     }
 
     return (
@@ -17,7 +18,7 @@ function Nav(props) {
                 <div className="hamburger-line" />
                 <div className="hamburger-line" />
             </button>
-            {!isOpen ?
+            {isOpen ?
                 <div className="navbar">
                     <ul>
                         <li><Link to='/about'><p>About</p></Link></li>

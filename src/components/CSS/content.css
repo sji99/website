@@ -1,10 +1,10 @@
 .content {
-    background-color: #CCCCCC;
     grid-column-start: 1;
     grid-row-start: 2;
 }
 
 .content p {
+    white-space: pre-wrap;
     text-align: justify;
     font-size: 19px;
     width: 60%;
