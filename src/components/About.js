@@ -1,29 +1,30 @@
 import React from "react";
 import Nav from "./Nav"
-import Header from "./Header"
 import "./CSS/content.css"
 
-const text = "Hello and welcome to my about page!\n\n\
-My name is Sean and I am a Developer with one year of experience in the Software Development field. I have a strong background in computer science and have graduated from the University of Technology Sydney with a Bachelors Degree. I have a strong passion for creating innovative and user-friendly software as well as learning new technologies and programming concepts.\n\n\
-I have worked on a variety of projects throughout my career which includes my time studying at university, ranging from small websites to large, enterprise-level applications. I have experience with a wide range of programming languages and frameworks, including Python, Java, and React. For more information about my skills feel free to look at my Skills tab in the navigation bar.\n\n\
-In my previous role, I was responsible for designing, developing, and maintaining software applications for Unicard Systems. I worked closely with a team of developers and product managers to deliver high-quality products that meet the needs of our customers.\n\n\
-Outside of work, I enjoy staying up-to-date with the latest trends and developments in the software industry. I also enjoy participating in hackathons and other programming events to hone my skills and meet other professionals in the field.\n\n\
-Thank you for visiting my about page. I hope you have learned a little bit more about me and my background as a developer. If you have any questions or would like to learn more, please don't hesitate to reach out.";
+const text = "Welcome to my about page!\n\nMy name is Sean, and I am a software developer with a passion for creating innovative and user-friendly applications. With one year of experience in the field and a strong background in computer science, I have the skills and knowledge to tackle a wide range of projects.\n\n\
+I hold a Bachelors Degree in Computer Science from the University of Technology Sydney, where I gained a solid foundation in programming and problem-solving. Throughout my studies and work experience, I have had the opportunity to work on a variety of projects, from small websites to large, enterprise-level applications. I have experience with a range of programming languages and frameworks, including C#, Java, and React, and I am always eager to learn new technologies and concepts.\n\n\
+In my previous role as a developer at Unicard Systems, I was responsible for designing, developing, and maintaining software applications. Working closely with a team of developers and product managers, I helped deliver high-quality products that met the needs of our customers.\n\n\
+Outside of work, I am committed to personal growth and self-improvement. I enjoy going to the gym, practicing muay thai and boxing, and playing guitar in my free time.\n\n\
+Thank you for visiting my about page. If you have any questions or would like to learn more about my background and experience as a software developer, please don't hesitate to reach out.";
 
 
 const About = () => (
+    
     <div>
-        <Nav/>
-        <div className="container">
-            <div>
-                <div className="page_title">
-                    <h1>About</h1>
+        <section id="about">
+            <div className="container">
+                <div>
+                    <div className="page_title">
+                        <h1>About</h1>
+                    </div>
+                </div>
+                <div className="content">
+                    <p>{text}</p>
                 </div>
             </div>
-            <div className="content">
-                <p>{text}</p>
-            </div>
-        </div>
+        </section>
+        
     </div>
     
 )
