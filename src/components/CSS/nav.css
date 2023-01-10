@@ -29,7 +29,7 @@ body {
     text-align: center;
     color: white;
     height: 100vh;
-    width: calc(100% - 25vh);
+    width: 100vh;
 }
 
 .navbar {
@@ -41,11 +41,15 @@ body {
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
-    right: 0;
+    left: 0;
     position: fixed;
     top: 0;
     height: 100vh;
     padding: 5px;
+}
+
+.navbar a {
+    all: unset;
 }
 
 .navbar ul {
@@ -65,7 +69,7 @@ body {
     display: inline-block;
     background-color: #CCCCCC;
     text-align: center;
-    width: 25vh;
+    width: 30vh;
     text-decoration: none;
 }
 
@@ -88,6 +92,6 @@ body {
 }
 
 .home-button {
-    top: 0;
+    bottom: 10;
     position: absolute;
 }

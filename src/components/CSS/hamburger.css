@@ -8,18 +8,15 @@
   height: 2rem;
   padding: 0;
   width: 2rem;
-}
-
-.hamburger-button {
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   z-index: 1;
   margin: 10px;
 }
 
 .hamburger-line {
-  background: white;
+  background: #CCCCCC;
   height: 0.25rem;
   width: 2rem;
 }

@@ -1,31 +1,46 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom"
+import React, { useState, useEffect, useRef } from "react";
 import "./CSS/hamburger.css";
 import { FaHome } from "react-icons/fa";
-import PropTypes from 'prop-types';
+import Hamburger from "./Hamburger";
 
 
-function Nav(props) {
+function Nav() {
+    const navRef = useRef(null);
     const [isOpen, setIsOpen] = useState(false);
 
-    function toggleMenu() {
-        setIsOpen(!isOpen);
-        props.onStateChange(!isOpen);
+    function handleStateChange(newState) {
+        setIsOpen(newState);
     }
+
+    useEffect(() => {
+        const handleClick = (event) => {
+            
+            if (event.target.className == 'hamburger-button' || event.target.className == 'hamburger-line') { 
+                if (isOpen) {
+                    setIsOpen(false);
+                } else {
+                    setIsOpen(true);
+                }
+            }
+            else if (navRef.current && !navRef.current.contains(event.target)) {
+                setIsOpen(false);
+            }
+        }
+
+        document.addEventListener('click', handleClick);
+
+        return () => {
+            document.removeEventListener('click', handleClick);
+        }
+    }, [isOpen]);
 
     return (
         <div >
-            <button className="hamburger-button" onClick={toggleMenu}>
-                <div className="hamburger-line" />
-                <div className="hamburger-line" />
-                <div className="hamburger-line" />
-            </button>
-            
-            
+            <Hamburger onStateChange={handleStateChange} />
             {isOpen ?
-                <div className="navbar">
+                <div className="navbar" ref={navRef}>
                     <div className="home-button">
-                        <Link to='/' ><p><FaHome color="#CCCCCC" size="30"/></p></Link>
+                        <p><a href="#home"><FaHome color="#CCCCCC" size="30" /></a></p>
                     </div>
                     <ul>
                         <li><p><a href="#about">About</a></p></li>
@@ -38,13 +53,4 @@ function Nav(props) {
         </div>
     )
 }
-
-Nav.propTypes = {
-    onStateChange: PropTypes.func, // optional prop
-};
-
-Nav.defaultProps = {
-    onStateChange: () => {}, // default value for the optional prop
-};
-
 export default Nav;
