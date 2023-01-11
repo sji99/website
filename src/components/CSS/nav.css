@@ -3,14 +3,6 @@ body {
     padding: 0;
 }
 
-#home-img {
-    max-height: 100vh;
-    height: 100vh; 
-    width: 100%; 
-    object-fit: cover;
-    float: left;
-}
-
 #centered-text {
     position: absolute;
     top: 47%;
@@ -36,16 +28,17 @@ body {
     text-align: center;
     margin: 0;
     display: flex;
-    justify-content: center;
-    background-color: #333333;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
+    top: 0;
     left: 0;
     position: fixed;
-    top: 0;
     height: 100vh;
-    padding: 5px;
+    padding: 10px;
 }
 
 .navbar a {
@@ -55,43 +48,99 @@ body {
 .navbar ul {
     list-style-type: none;
     margin: 0;
-    margin-top: 50px;
+    margin-top: 10px;
     padding: 0;
 }
 
-.navbar ul li {
-    margin: 5px 0px;
+.icon {
+    margin-right: 5px;
 }
 
-.navbar ul li a {
+.navbar li {
+    margin: 20px 0px;
+}
+
+.navbar a {
     list-style: none;
-    margin: 0px;
-    display: inline-block;
-    background-color: #CCCCCC;
-    text-align: center;
-    width: 30vh;
+    display: flex; 
+    align-items: center;
+    justify-content: flex-start;
     text-decoration: none;
-}
-
-.navbar li a:hover {
-    background-color: #805959;
-    color: #f5f5f5 !important;
+    cursor: pointer;
 }
 
 .navbar p {
-    font-size: 18px;
+    margin-left: 10px;
+    font-size: 12px;
     text-decoration: none;
-    color: #3c3c3c;
+    color: #CCCCCC;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
 
 .navbar h1 {
-    color: #f5f5f5;
-    margin-top: -500px;
+    color: #CCCCCC;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    top: 0;
 }
 
-.home-button {
-    bottom: 10;
+.bottom-nav-section {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: 30px;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+.bottom-nav-section a {
+    padding: 0;
+}
+
+.bottom-nav-section ul {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 0px;
+    padding: 0;
+}
+
+#nav-title {
     position: absolute;
+    color: white;
+}
+
+
+
+@media (max-width: 872px) {
+    .navbar {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+    .navbar ul {
+        margin-top: 5px;
+    }
+    .navbar ul li a {
+        padding: 0px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    #home-button {
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+    .external-url p{
+        margin: 0;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+    .bottom-nav-section {
+        margin-bottom: 10px;
+    }
 }
