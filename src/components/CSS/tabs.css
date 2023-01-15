@@ -1,0 +1,27 @@
+
+.tab-style > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.tab-style > ul > li {
+  display: inline-block;
+  padding: 8px 16px;
+  cursor: pointer;
+  background-color: #CCCCCC;
+  margin-right: 4px;
+  
+}
+
+.tab-style > ul > li.active {
+  background-color: #333333;
+  color: white;
+}
+
+@media (max-width: 319px) {
+  .tab-style > ul > li {
+    width: 100px;
+  }
+}

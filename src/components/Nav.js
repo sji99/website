@@ -66,16 +66,16 @@ function Nav() {
                     style={{ backgroundColor: color || isMobileView ? "#333333" : "rgba(51, 51, 51, 0.2)" }}>
                     <h1>Portfolio</h1>
                     <ul>
-                        <li><a href="#about"><FaQuestionCircle color="#CCCCCC" size="20" className="icon" /><p>About</p></a></li>
-                        <li><a href="#skills"><FaListUl color="#CCCCCC" size="20" className="icon" /><p>Skills</p></a></li>
-                        <li><a href="#projects"><FaRocket color="#CCCCCC" size="20" className="icon" /><p>Projects</p></a></li>
-                        <li><a href="#contact"><FaPhoneSquare color="#CCCCCC" size="20" className="icon" /><p>Contact</p></a></li>
+                        <li><a href="#about"><FaQuestionCircle color="#CCCCCC" size="15" className="icon" /><p>About</p></a></li>
+                        <li><a href="#skills"><FaListUl color="#CCCCCC" size="15" className="icon" /><p>Skills</p></a></li>
+                        <li><a href="#projects"><FaRocket color="#CCCCCC" size="15" className="icon" /><p>Projects</p></a></li>
+                        <li><a href="#contact"><FaPhoneSquare color="#CCCCCC" size="15" className="icon" /><p>Contact</p></a></li>
                     </ul>
 
                     <div className="bottom-nav-section">
                         <ul>
-                        <li><a><FaGithub color="#CCCCCC" size="25" className="icon" /></a></li>
-                        <li><a><FaLinkedin color="#CCCCCC" size="25" className="icon" /></a></li>
+                        <li><a href = "https://github.com/SeanIlagan123" target="_blank"><FaGithub color="#CCCCCC" size="25" className="icon" /></a></li>
+                        <li><a href = "https://www.linkedin.com/in/sean-ilagan-96163818a/" target="_blank"><FaLinkedin color="#CCCCCC" size="25" className="icon" /></a></li>
                         <li><a href="#home"><FaHome color="#CCCCCC" size="25" className="icon" /></a></li>
                         </ul>
                         

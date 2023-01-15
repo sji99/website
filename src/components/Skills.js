@@ -31,15 +31,16 @@ const Skills = () => (
                             <div><i className="devicon-swift-plain colored p-icon" />Swift</div>
                             <div><i className="devicon-html5-plain-wordmark colored p-icon" />HTML</div>
                             <div><i className="devicon-css3-plain-wordmark colored p-icon" />CSS</div>
-                            <div><i className="devicon-microsoftsqlserver-plain-wordmark colored p-icon" />SQL</div>
+                            <div><i className="devicon-postgresql-plain-wordmark colored p-icon" />SQL</div>
                         </div>
                     </div>
                     <h1>Framework & Platforms</h1>
                     <div className="centre-container">
                         <div className="language-framework">
-                            <div><i className="devicon-dotnetcore-plain colored p-icon" />.NET Core</div>
                             <div><i className="devicon-react-original-wordmark colored p-icon" />ReactJS</div>
                             <div><i className="devicon-nodejs-plain colored p-icon" />NodeJS</div>
+                            <div><i className="devicon-jquery-plain-wordmark colored p-icon" />Jquery</div>
+                            <div><i className="devicon-dotnetcore-plain colored p-icon" />.NET Core</div>
                             <div><i className="devicon-gradle-plain-wordmark colored p-icon" />Gradle</div>
                         </div>
                     </div>

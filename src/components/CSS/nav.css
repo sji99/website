@@ -25,6 +25,7 @@ body {
 }
 
 .navbar {
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
     margin: 0;
     display: flex;
@@ -52,10 +53,6 @@ body {
     padding: 0;
 }
 
-.icon {
-    margin-right: 5px;
-}
-
 .navbar li {
     margin: 20px 0px;
 }
@@ -74,14 +71,12 @@ body {
     font-size: 12px;
     text-decoration: none;
     color: #CCCCCC;
-    font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
 
 .navbar h1 {
     color: #CCCCCC;
     position: relative;
-    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     top: 0;
 }

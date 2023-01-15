@@ -1,6 +1,6 @@
 
 .content {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     white-space: pre-wrap;
     text-align: justify;
     font-size: 19px;
@@ -29,7 +29,7 @@
 }
 
 .page_title h1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
     color: black;
     font-size:40px;
@@ -48,7 +48,7 @@
 }
 
 .image-content {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     text-align: justify;
     display: flex;
     flex-direction: row;
@@ -99,7 +99,7 @@
 
 @media (max-width: 466px) {
     #portrait {
-        width: 150;
+        width: 90%;
     }
     .content {
         text-align: left;
