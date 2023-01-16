@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/SeanIlagan123/website/issues"
   },
-  "homepage": "hhttps://SeanIlagan123.github.io/website",
+  "homepage": "https://SeanIlagan123.github.io/website",
   "dependencies": {
     "@babel/preset-react": "^7.16.0",
     "dotenv-webpack": "^8.0.1",
