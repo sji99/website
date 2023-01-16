@@ -7,7 +7,7 @@
     "start": "webpack-dev-server --mode development --open --hot --history-api-fallback",
     "build": "webpack --mode production",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/SeanIlagan123/website/issues"
   },
-  "homepage": "https://github.com/SeanIlagan123/website#readme",
+  "homepage": "hhttps://SeanIlagan123.github.io/website",
   "dependencies": {
     "@babel/preset-react": "^7.16.0",
     "dotenv-webpack": "^8.0.1",
