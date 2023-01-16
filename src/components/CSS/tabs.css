@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .tab-style > ul > li {
@@ -12,7 +13,6 @@
   cursor: pointer;
   background-color: #CCCCCC;
   margin-right: 4px;
-  
 }
 
 .tab-style > ul > li.active {
@@ -20,8 +20,9 @@
   color: white;
 }
 
-@media (max-width: 319px) {
+
+@media (max-width: 401px) {
   .tab-style > ul > li {
-    width: 100px;
+    width: 50%;
   }
 }

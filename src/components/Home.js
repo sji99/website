@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Nav from "./Nav"
 import "./CSS/content.css"
 import 'react-slideshow-image/dist/styles.css'
@@ -19,6 +19,11 @@ function Home() {
                     <h1 id="centered-text">Sean Ilagan</h1>
                 </div>
             </div>
+
+            <div id="square">
+
+            </div>
+
 
             <Nav />
             <About />

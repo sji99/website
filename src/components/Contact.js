@@ -2,20 +2,15 @@ import React from "react";
 import Nav from "./Nav"
 import "./CSS/content.css"
 
-const text = "Yo!";
-
 
 const Contact = () => (
     <div>
         <section id="contact">
             <div className="container">
-                <div>
-                    <div className="page_title">
-                        <h1>Contact</h1>
-                    </div>
-                </div>
                 <div className="content">
-                    <p>{text}</p>
+                    <p className="bold">Contact</p>
+                    <p>Email Address: seanilagan135@gmail.com</p>
+                    <p>Phone Number: +61 490250824</p>
                 </div>
             </div>
         </section>

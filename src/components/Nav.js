@@ -68,7 +68,7 @@ function Nav() {
                     <ul>
                         <li><a href="#about"><FaQuestionCircle color="#CCCCCC" size="15" className="icon" /><p>About</p></a></li>
                         <li><a href="#skills"><FaListUl color="#CCCCCC" size="15" className="icon" /><p>Skills</p></a></li>
-                        <li><a href="#projects"><FaRocket color="#CCCCCC" size="15" className="icon" /><p>Projects</p></a></li>
+                        <li><a href="#projects"><FaRocket color="#CCCCCC" size="15" className="icon" /><p>Experience</p></a></li>
                         <li><a href="#contact"><FaPhoneSquare color="#CCCCCC" size="15" className="icon" /><p>Contact</p></a></li>
                     </ul>
 

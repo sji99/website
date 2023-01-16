@@ -1,0 +1,158 @@
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.skill-list > div {
+    width: 30em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15em;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    box-shadow: rgba(0, 0, 0, 0.18) 1px 2px 4px 0px;
+    margin: 5px;
+    background-color: rgba(225, 137, 13, 0.5);
+    padding: 10px;
+}
+
+.skill-icons > i {
+    overflow: hidden;
+    position: absolute;
+}
+
+.skill-card {
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-card > p {
+    z-index: 1;
+    color: white;
+    position: absolute;
+    font-size: 30px;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+    user-select: none;
+}
+
+/* for frontenddev section */
+#jqueryicon {
+    top: 0em;
+    left: 4em;
+    transform: rotate(-20deg);
+    font-size: 6em;
+    z-index: 1;
+}
+
+#html5icon {
+    top: 30;
+    left: 20;
+    transform: rotate(-20deg);
+    font-size: 7em;
+    z-index: 0;
+}
+#cssicon {
+    transform: rotate(20deg);
+    z-index: 0;
+    bottom: 0.1em;
+    right: 0.3em;
+    font-size: 7em;
+}
+#jsicon {
+    transform: rotate(20deg);
+    z-index: 0;
+    top: 0.2em;
+    right: 0.5em;
+    font-size: 15em;
+}
+#reactjsicon {
+    transform: rotate(-10deg);
+    z-index: 1;
+    top: 0;
+    left: 1.5em;
+    font-size: 7em;
+}
+
+.devicon-nodejs-plain {
+    top: 0;
+    right: 0;
+}
+
+/* for backenddev section */
+#dotneticon {
+    bottom: -0.1em;
+    left: -0.2em;
+    font-size: 12em;
+    transform: rotate(-10deg);
+}
+
+#nodejsicon {
+    top: -0.1em;
+    right: -0.2em;
+    font-size: 8em;
+    transform: rotate(10deg);
+}
+
+#javaicon {
+    top: 0em;
+    right: 1em;
+    font-size: 8em;
+    transform: rotate(-10deg);
+}
+
+#pythonicon {
+    bottom: 0em;
+    right: 0em;
+    font-size: 10em;
+    transform: rotate(-10deg);
+}
+
+#csharpicon {
+    top: 0em;
+    left: 0.5em;
+    font-size: 10em;
+    transform: rotate(10deg);
+}
+
+/* database section */
+#sqlicon {
+    top: 0em;
+    left: 0em;
+    font-size: 10em;
+    transform: rotate(10deg);
+}
+
+#mongoicon {
+    top: 0em;
+    right: 0.2em;
+    font-size: 8em;
+    transform: rotate(-20deg);
+}
+
+#mysqlicon { 
+    bottom: 0em;
+    right: 0.2em;
+    font-size: 10em;
+    transform: rotate(20deg);
+}
+
+#mssicon {
+    bottom: 0em;
+    left: 0.2em;
+    font-size: 10em;
+    transform: rotate(-20deg);
+}
+
+/* cloud computing section */
+#awslogo {
+    transform: rotate(-40deg);
+}
+
+#azurelogo {
+    transform: rotate(40deg);
+}
