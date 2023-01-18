@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import Nav from "./Nav"
 import "./CSS/content.css"
 import "./CSS/skills-content.css"
@@ -6,7 +6,6 @@ import { FaAws } from "react-icons/fa";
 import { SiMicrosoftazure } from "react-icons/si"
 
 function Skills() {
-
     return (
         <div>
             <section id="skills">
@@ -19,38 +18,39 @@ function Skills() {
 
                     <div className="content">
                         <div className="skill-list">
-                            <div className="skill-card" id="front-end">
+                            <div className="skill-card" id="front-end" >
                                 <p>Frontend Development</p>
                                 <div className="skill-icons">
-                                    <i id="reactjsicon" className="devicon-react-original-wordmark colored p-icon" />
-                                    <i id="html5icon" className="devicon-html5-plain-wordmark colored p-icon" />
-                                    <i id="cssicon" className="devicon-css3-plain-wordmark colored p-icon" />
-                                    <i id="jsicon" className="devicon-javascript-plain colored p-icon" />
-                                    <i id="jqueryicon" className="devicon-jquery-plain-wordmark colored p-icon" />
+                                    <i id="reactjsicon" className={`devicon-react-original-wordmark colored  `} />
+                                    <i id="html5icon" className={`devicon-html5-plain-wordmark colored  `} />
+                                    <i id="cssicon" className={`devicon-css3-plain-wordmark colored `} />
+                                    <i id="jsicon" className={`devicon-javascript-plain colored  `} />
+                                    <i id="jqueryicon" className={`devicon-jquery-plain-wordmark colored  `} />
                                 </div>
                             </div>
                             <div className="skill-card" id="back-end">
                                 <p>Backend Development</p>
                                 <div className="skill-icons">
-                                    <i id="nodejsicon" className="devicon-nodejs-plain colored p-icon" />
-                                    <i id="dotneticon" className="devicon-dotnetcore-plain colored p-icon" />
-                                    <i id="javaicon" className="devicon-java-plain colored p-icon" />
-                                    <i id="pythonicon" className="devicon-python-plain colored p-icon" />
-                                    <i id="csharpicon" className="devicon-csharp-plain colored p-icon" />
+                                    <i id="nodejsicon" className={`devicon-nodejs-plain colored `} />
+                                    <i id="dotneticon" className={`devicon-dotnetcore-plain colored $`} />
+                                    <i id="javaicon" className={`devicon-java-plain colored  `} />
+                                    <i id="pythonicon" className={`devicon-python-plain colored `} />
+                                    <i id="csharpicon" className={`devicon-csharp-plain colored `} />
                                 </div>
 
                             </div>
                             <div className="skill-card" id="databases">
                                 <p>Databases</p>
                                 <div className="skill-icons">
-                                    <i id="sqlicon" className="devicon-postgresql-plain-wordmark colored p-icon" />
-                                    <i id="mongoicon" className="devicon-mongodb-plain-wordmark colored p-icon" />
-                                    <i id="mysqlicon" className="devicon-mysql-plain-wordmark colored p-icon"></i>
-                                    <i id="mssicon" className="devicon-microsoftsqlserver-plain-wordmark colored p-icon" />
+                                    <i id="sqlicon" className={`devicon-postgresql-plain-wordmark colored `} />
+                                    <i id="mongoicon" className={`devicon-mongodb-plain-wordmark colored `}  />
+                                    <i id="mysqlicon" className={`devicon-mysql-plain-wordmark colored `} />
+                                    <i id="mssicon" className={`devicon-microsoftsqlserver-plain-wordmark colored `} />
                                 </div>
                             </div>
                             <div className="skill-card" id="cloud-computing">
                                 <p>Cloud Computing</p>
+
                                 <div id="awslogo"><FaAws color="#FF9900" size="200" /></div>
                                 <div id="azurelogo"><SiMicrosoftazure color="#33BBEF" size="200" /></div>
                             </div>
